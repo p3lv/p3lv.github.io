@@ -117,6 +117,29 @@ const { frontmatter } = Astro.props;
   text-align: inline-block;
 }
 
+/* Markdown ">" blockquotes */
+.content :global(blockquote) {
+  margin: 1.25rem 0;
+  padding: 0.25rem 1rem;
+  border-left: 4px solid #89ce00; /* the vertical line */
+  background: rgba(137, 206, 0, 0.06);
+  border-radius: 6px;
+}
+
+/* Remove weird extra spacing inside blockquotes */
+.content :global(blockquote > :first-child) {
+  margin-top: 0;
+}
+
+.content :global(blockquote > :last-child) {
+  margin-bottom: 0;
+}
+
+/* Optional: make text slightly muted inside the indent */
+.content :global(blockquote p) {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
