@@ -6,8 +6,8 @@ author: 'xypp3'
 tags: []
 ---
 
-_This blog will have a few "sidequest" sections, they are optional so skip for a
-read._
+_This blog will have a few "sidequest" sections, they are optional so skip ahead if you wanna,
+I'm not your parent_
 
 In university, I was lucky enough where I got to participate in some HPC (High Performance Computing).
 Where I battled good ol' dependancy hell. I managed to get the app working and to not go through 
