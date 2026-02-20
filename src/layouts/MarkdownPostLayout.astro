@@ -101,13 +101,21 @@ const { frontmatter } = Astro.props;
   line-height: 1.6;
   margin-bottom: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: justify;
 }
 
 .content p {
   text-align: justify;
 }
 
+:global(.content img) {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+  text-align: inline-block;
+}
 
 .tags {
   display: flex;
@@ -126,4 +134,5 @@ const { frontmatter } = Astro.props;
   background-color: #f8fcfd;
   transition: all 0.2s ease;
 }
+
 </style>
