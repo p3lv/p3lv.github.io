@@ -16,7 +16,7 @@ allPosts.sort((a, b) => {
     <ul class="blog-list">
         {
         allPosts.map((post) => (
-          <BlogCard url={`/posts/${post.id}`} title={post.data.title} />
+        <BlogCard url={`/posts/${post.id}`} title={post.data.title} pubDate={post.data.pubDate} />
         ))
         }
     </ul>

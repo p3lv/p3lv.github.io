@@ -1,16 +1,30 @@
 ---
-const { url, title } = Astro.props
+const { url, title, pubDate } = Astro.props
+
+const year = pubDate.getFullYear()
+const month = pubDate.getMonth()
+const day = pubDate.getDate()
 ---
-<li class="blog-card"><a class="blog-link" href={url}>{title}</a></li>
+<li class="blog-card">
+  <span class="blog-date">{year}-{month}-{day}</span>
+  <a class="blog-link" href={url}>{title}</a>
+</li>
 
 <style>
   .blog-card {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     text-decoration: none !important;
   }
 
+  .blog-date {
+    white-space: nowrap;
+  }
+
   .blog-link {
+    flex: 1;
+    text-align: left;
     color: #5ba300;
   }
 
