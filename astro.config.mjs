@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 //https://astro.build/config
 export default defineConfig({
-	site: 'https://xypp3.github.io',
-	base: 'xypp3.github.io',
+	site: 'https://p3lv.github.io',
+	base: 'p3lv.github.io',
 });
